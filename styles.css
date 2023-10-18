@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: #1F4172;
+    overflow: hidden;
+}
+
+.wrapper{
+    background: #F1B4BB;
+    max-width: 405px;
+    margin: 135px auto;
+    border-radius: 7px;
+    padding: 28px 0;
+}
+
+.taskin{
+    height: 52px;
+    padding: 0 25px;
+    position: relative;
+}
+
+.taskin i{
+    position: absolute;
+    top: 50%;
+    transform: translate(17px, -50%);
+}
+
+.taskin input{
+    height: 100%;
+    width: 100%;
+    padding: 0 20px 0 46px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 1px solid #132043;
+    outline: none;
+}
+
+.taskin input::placeholder{
+    color: #132043;
+}
+
+.control{
+    padding: 18px 25px;
+    border-bottom: 1px solid #132043; 
+}
+
+.control,li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.filter span{
+    margin: 0 8px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.filter span:first-child{
+    margin-left: 0;
+}
+
+.filter span.active{
+    color: #1F4172;
+}
+
+.control .clear{
+    outline: none;
+    border: none;
+    color: #FDF0F0;
+    background: #132043;
+    border-radius: 5px;
+    padding: 7px 13px;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.taskbox{
+    margin: 20px 25px;
+}
+
+.taskbox .task{
+    list-style: none;
+    font-size: 17px;
+    margin-bottom: 18px;
+    border-bottom: 1px solid #132043;
+    padding-bottom: 16px;
+}
+
+.taskbox .task:last-child{
+    margin-bottom: 0;
+    border-bottom: 0;
+    padding-bottom: 0;
+}
+
+.task label{
+    display: flex;
+}
+
+.task label p.checked{
+    text-decoration: line-through;
+}
+
+.task label input{
+    margin-right: 12px;
+}
+
+.task .settings{
+    cursor: pointer;
+    position: relative;
+}
+
+.settings .menu{
+    position: absolute;
+    background: #132043;
+    color:#FDF0F0;
+    padding: 5px 0;
+    box-shadow: 0 0 6px rgba(0,0,0,0.15);
+    z-index: 2;
+    right: -5px;
+    bottom: -65px;
+    transform: scale(0);
+    transition: transform 0.2s ease;
+    transform-origin: top right;
+}
+
+.settings .menu.show{
+    transform: scale(1);
+}
+
+.menu li{
+    height: 25px;
+    font-size: 16px;
+    margin-bottom: 2px;
+    justify-content: flex-start;
+    padding: 17px 15px;
+}
+
+.menu li:last-child{
+    margin-bottom: 0;
+}
+
+.menu li:hover{
+    background: #1F4172;
+}
+
+.menu li i{
+    padding-right: 8px;
+}

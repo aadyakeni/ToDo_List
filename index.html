@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="taskin">
+            <i class="ri-bar-chart-horizontal-line"></i>
+            <input type="text" placeholder="Add a new task">
+        </div>
+        <div class="control">
+            <div class="filter">
+                <span id="all" class="active">All</span>
+                <span id="pending">Pending</span>
+                <span id="completed">Completed</span>
+            </div>
+            <button class="clear">Clear all</button>
+        </div>
+        <ul class="taskbox"></ul>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
